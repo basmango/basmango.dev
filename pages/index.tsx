@@ -15,11 +15,11 @@ export default function Home() {
           <div className="flex flex-col-reverse sm:flex-row items-start">
             <div className="flex flex-col pr-8">
               <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white">
-                Lee Robinson
+                Bassam Pervez
               </h1>
               <h2 className="text-gray-700 dark:text-gray-200 mb-4">
-                VP of Developer Experience at{' '}
-                <span className="font-semibold">Vercel</span>
+                Student @ {' '}
+                <span className="font-semibold">IIITD</span>
               </h2>
               <p className="text-gray-600 dark:text-gray-400 mb-16">
                 Helping developers build a faster web. Teaching about web
@@ -28,7 +28,7 @@ export default function Home() {
             </div>
             <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
               <Image
-                alt="Lee Robinson"
+                alt="Bassam Pervez"
                 height={176}
                 width={176}
                 src="/avatar.jpg"
@@ -43,21 +43,7 @@ export default function Home() {
             Featured Posts
           </h3>
           <div className="flex gap-6 flex-col md:flex-row">
-            <BlogPostCard
-              title="Everything I Know About Style Guides, Design Systems, and Component Libraries"
-              slug="style-guides-component-libraries-design-systems"
-              gradient="from-[#D8B4FE] to-[#818CF8]"
-            />
-            <BlogPostCard
-              title="Rust Is The Future of JavaScript Infrastructure"
-              slug="rust"
-              gradient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
-            />
-            <BlogPostCard
-              title="Past, Present, and Future of React State Management"
-              slug="react-state-management"
-              gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
-            />
+        
           </div>
           <Link href="/blog">
             <a className="flex mt-8 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6">
@@ -134,7 +120,6 @@ export default function Home() {
             </svg>
           </a>
           <span className="h-16" />
-          <Subscribe />
         </div>
       </Container>
     </Suspense>

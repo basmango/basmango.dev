@@ -5,7 +5,6 @@ import {PortableText} from '@portabletext/react'
 import { postQuery, postSlugsQuery } from 'lib/queries';
 import { getTweets } from 'lib/twitter';
 import { sanityClient, getClient } from 'lib/sanity-server';
-import { mdxToHtml } from 'lib/mdx';
 import { Post } from 'lib/types';
 
 export default function PostPage({ post }: { post: Post }) {

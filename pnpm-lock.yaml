@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@portabletext/react': ^1.0.6
   '@prisma/client': ^4.3.1
   '@sanity/image-url': ^1.0.1
   '@sanity/webhook': ^2.0.0
@@ -42,6 +43,7 @@ specifiers:
   use-delayed-render: ^0.0.7
 
 dependencies:
+  '@portabletext/react': 1.0.6_react@18.2.0
   '@prisma/client': 4.3.1_prisma@4.3.1
   '@sanity/image-url': 1.0.1
   '@sanity/webhook': 2.0.0
@@ -1468,13 +1470,13 @@ packages:
   /@types/react-copy-to-clipboard/5.0.4:
     resolution: {integrity: sha512-otTJsJpofYAeaIeOwV5xBUGpo6exXG2HX7X4nseToCB2VgPEBxGBHCm/FecZ676doNR7HCSTVtmohxfG2b3/yQ==}
     dependencies:
-      '@types/react': 18.0.18
+      '@types/react': 18.0.22
     dev: false
 
   /@types/react-is/17.0.3:
     resolution: {integrity: sha512-aBTIWg1emtu95bLTLx0cpkxwGW3ueZv71nE2YFBpL8k/z5czEW8yYpOo8Dp+UUAFAtKwNaOsh/ioSeQnWlZcfw==}
     dependencies:
-      '@types/react': 18.0.18
+      '@types/react': 18.0.22
     dev: false
 
   /@types/react/17.0.49:

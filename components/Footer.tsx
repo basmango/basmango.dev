@@ -23,25 +23,14 @@ export default function Footer() {
           <Link href="/">
             <a className="text-gray-500 hover:text-gray-600 transition">Home</a>
           </Link>
-          <Link href="/about">
-            <a className="text-gray-500 hover:text-gray-600 transition">
-              About
-            </a>
-          </Link>
-          <Link href="/newsletter">
-            <a className="text-gray-500 hover:text-gray-600 transition">
-              Newsletter
-            </a>
-          </Link>
-        </div>
-        <div className="flex flex-col space-y-4">
-          <ExternalLink href="https://twitter.com/leeerob">
-            Twitter
-          </ExternalLink>
-          <ExternalLink href="https://github.com/leerob">GitHub</ExternalLink>
-          <ExternalLink href="https://www.youtube.com/channel/UCZMli3czZnd1uoc1ShTouQw">
+          <ExternalLink href="https://github.com/basmango">GitHub</ExternalLink>
+          <ExternalLink href="https://www.youtube.com/channel/UCJgsfCO0UdOT8v0PRziNziw">
             YouTube
           </ExternalLink>
+
+        </div>
+        <div className="flex flex-col space-y-4">
+          
         </div>
         <div className="flex flex-col space-y-4">
      

@@ -20,7 +20,17 @@ export default function BlogLayout({
       type="article"
     >
       <article className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">
-        <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
+        
+      
+      
+      <Image
+              alt="blog main image"
+              height={100}
+              width={800}
+              src={urlForImage(post.mainImage).url()}
+            />
+     
+        <h1 className="mb-4 text-3xl mt-5 font-bold tracking-tight text-black md:text-5xl dark:text-white">
           {post.title}
         </h1>
         <div className="flex flex-col items-start justify-between w-full mt-2 md:flex-row md:items-center">

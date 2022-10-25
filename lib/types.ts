@@ -1,12 +1,12 @@
-
+import { Block,Image } from "sanity";
 export type Post = {
   _id: string;
   slug: string;
-  body: string;
+  body: Block[];
   title: string;
   publishedAt: string;
   excerpt: string;
-  mainImage: string;
+  mainImage: Image;
   readingTime: string;
   tweets: any[];
 };

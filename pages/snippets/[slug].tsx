@@ -1,9 +1,7 @@
 import { MDXRemote } from 'next-mdx-remote';
 import SnippetLayout from 'layouts/snippets';
-import components from 'components/MDXComponents';
 import { snippetsQuery, snippetSlugsQuery } from 'lib/queries';
 import { sanityClient, getClient } from 'lib/sanity-server';
-import { mdxToHtml } from 'lib/mdx';
 import { Snippet } from 'lib/types';
 
 export default function SnippetsPage({ snippet }: { snippet: Snippet }) {
@@ -30,13 +28,11 @@ export async function getStaticProps({ params, preview = false }) {
     return { notFound: true };
   }
 
-  const { html } = await mdxToHtml(snippet.content);
-
+  
   return {
     props: {
       snippet: {
         ...snippet,
-        content: html
       }
     }
   };

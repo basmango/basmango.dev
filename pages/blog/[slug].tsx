@@ -1,18 +1,12 @@
-import { MDXRemote } from 'next-mdx-remote';
 import BlogLayout from 'layouts/blog';
-import Tweet from 'components/Tweet';
 import {PortableText} from '@portabletext/react'
 import { postQuery, postSlugsQuery } from 'lib/queries';
-import { getTweets } from 'lib/twitter';
 import { sanityClient, getClient } from 'lib/sanity-server';
 import { Post } from 'lib/types';
+import { TypedObject } from 'sanity';
 
 export default function PostPage({ post }: { post: Post }) {
-  const StaticTweet = ({ id }) => {
-    const tweet = post.tweets.find((tweet) => tweet.id === id);
-    return <Tweet {...tweet} />;
-  };
-
+  
   return (
     <BlogLayout post={post}>
             

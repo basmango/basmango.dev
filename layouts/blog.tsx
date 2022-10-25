@@ -43,22 +43,12 @@ export default function BlogLayout({
           </p>
         </div>
         <Suspense fallback={null}>
-          <div className="w-full mt-4 prose daContrk:prose-dark max-w-none">
+          <div className="w-full mt-4 prose daContrk:prose-dark max-w-none dark:text-white">
             {children}
           </div>
           <div className="mt-8">
           </div>
-          <div className="text-sm text-gray-700 dark:text-gray-300">
-            
-            {` • `}
-            <a
-              href="https://github.com/leerob/leerob.io/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {'Suggest Change'}
-            </a>
-          </div>
+          
         </Suspense>
       </article>
     </Container>

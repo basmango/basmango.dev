@@ -9,7 +9,6 @@ import { Snippet } from 'lib/types';
 export default function SnippetsPage({ snippet }: { snippet: Snippet }) {
   return (
     <SnippetLayout snippet={snippet}>
-      <MDXRemote {...snippet.content} components={components} />
     </SnippetLayout>
   );
 }

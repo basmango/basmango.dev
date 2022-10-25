@@ -1,17 +1,17 @@
 {
     "name": "Bassam Pervez",
-    "short_name": "leerob.io",
+    "short_name": "basmango.dev",
     "description": "Curious mind, developer, and writer.",
     "icons": [
         {
-            "src": "/static/favicons/android-chrome-192x192.png",
+            "src": "/avatar.jpg",
             "sizes": "192x192",
-            "type": "image/png"
+            "type": "image/jpg"
         },
         {
-            "src": "/static/favicons/android-chrome-512x512.png",
+            "src": "/avatar.jpg",
             "sizes": "512x512",
-            "type": "image/png"
+            "type": "image/jpg"
         }
     ],
     "background_color": "#ffffff",

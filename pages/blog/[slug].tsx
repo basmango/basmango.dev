@@ -1,7 +1,7 @@
 import { MDXRemote } from 'next-mdx-remote';
 import BlogLayout from 'layouts/blog';
 import Tweet from 'components/Tweet';
-import components from 'components/MDXComponents';
+import {PortableText} from '@portabletext/react'
 import { postQuery, postSlugsQuery } from 'lib/queries';
 import { getTweets } from 'lib/twitter';
 import { sanityClient, getClient } from 'lib/sanity-server';
@@ -16,16 +16,13 @@ export default function PostPage({ post }: { post: Post }) {
 
   return (
     <BlogLayout post={post}>
-      <MDXRemote
-        {...post.body}
-        components={
-          {
-            ...components,
-            StaticTweet
-          } as any
-        }
+            
+      <PortableText
+        value =  {post.body}
       />
     </BlogLayout>
+    
+
   );
 }
 
@@ -46,17 +43,10 @@ export async function getStaticProps({ params, preview = false }) {
     return { notFound: true };
   }
 
-  const { html, tweetIDs, readingTime } = await mdxToHtml(post.body);
-  const tweets = await getTweets(tweetIDs);
 
   return {
     props: {
-      post: {
-        ...post,
-        content: html,
-        tweets,
-        readingTime
-      }
+      post: post
     }
   };
 }

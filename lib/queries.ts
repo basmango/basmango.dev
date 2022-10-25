@@ -1,9 +1,9 @@
 const postFields = `
   _id,
   title,
-  date,
+  publishedAt,
   excerpt,
-  coverImage,
+  mainImage,
   "slug": slug.current,
 `;
 
@@ -15,7 +15,7 @@ export const indexQuery = `
 export const postQuery = `
 {
   "post": *[_type == "post" && slug.current == $slug] | order(_updatedAt desc) [0] {
-    content,
+    body,
     ${postFields}
   }
 }`;

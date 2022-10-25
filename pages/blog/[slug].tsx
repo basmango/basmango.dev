@@ -17,7 +17,7 @@ export default function PostPage({ post }: { post: Post }) {
   return (
     <BlogLayout post={post}>
       <MDXRemote
-        {...post.content}
+        {...post.body}
         components={
           {
             ...components,
@@ -46,7 +46,7 @@ export async function getStaticProps({ params, preview = false }) {
     return { notFound: true };
   }
 
-  const { html, tweetIDs, readingTime } = await mdxToHtml(post.content);
+  const { html, tweetIDs, readingTime } = await mdxToHtml(post.body);
   const tweets = await getTweets(tweetIDs);
 
   return {

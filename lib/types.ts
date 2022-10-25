@@ -3,11 +3,11 @@ import { MDXRemoteSerializeResult } from 'next-mdx-remote';
 export type Post = {
   _id: string;
   slug: string;
-  content: MDXRemoteSerializeResult;
+  body: MDXRemoteSerializeResult;
   title: string;
-  date: string;
+  publishedAt: string;
   excerpt: string;
-  coverImage: string;
+  mainImage: string;
   readingTime: string;
   tweets: any[];
 };

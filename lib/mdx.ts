@@ -26,7 +26,6 @@ export async function mdxToHtml(source) {
       format: 'mdx'
     }
   });
-  console.log(source.children);
   
   return {
     html: mdxSource,
